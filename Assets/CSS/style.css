@@ -1,6 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
 *{
 
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
     scroll-behavior: smooth;
 }
+
+body{
+
+    font-family: "Roboto", sans-serif;
+    line-height: 1.6;
+    background-color: azure;
+}
+
+header{
+
+    text-align: center;
+    height: 20vh;
+    background-color: #2c2d34;
+    box-shadow: 0px 2px 1px 0px #f2910a;
+}
+
+#Sobre-Mi{
+
+    display: flex;
+    flex-direction: row;
+}
+
+
+#Sobre-Mi img{
+
+    width: 200px;
+    border-radius: 40%;
+    box-shadow: 0 2px 3px 0 #efd510;
+    cursor: pointer;
+    margin-left: 1%;
+}
+
+#Sobre-Mi img:hover{
+
+    box-shadow: 0 2px 3px 0 azure;
+    margin-left: 2%;
+    z-index: 1;
+    position: fixed;
+}
+
+
+
+
+nav ul li {
+
+    display: inline;
+}
+
+.enlace-nav{
+
+    color: #f2910a;
+    margin:25px 15px 10px 10px ;
+}
+
+.enlace-nav:hover{
+
+    background-color: #efd510;
+    padding: 5px 5px 5px 5px;
+    border-radius: 5px;
+    color: #2c2d34;
+}
+
+a{
+
+    text-decoration: none;
+}
+
+.content{
+    display: flex;
+}
+
+main{
+
+    width: 75%;
+    height: auto;
+    margin: 10px;
+    background-color: #2c2d34;
+}
+
+inside{
+
+    display: flex;
+    flex-direction: column;
+    background-color: #efd510;
+    margin-top: 10px;
+    padding: 0 5px 0 5px;
+    width: 25%;
+}
+
+inside ul li{
+
+    list-style: none;
+    text-align: center;
+    align-items: center;
+
+}
+
+#Contato{
+
+    margin:5px 15px 0px 15px;
+}
+
+h1{
+
+    color: azure;
+}
+
+.title{
+
+    color:#efd510;
+    margin: 10px;
+}
+
+h2{
+font-size: 25px;
+text-align: center;
+
+}
+
+.sub-title{
+
+    color:azure;
+}
+
+.Sobre-Mi{
+
+    color: #efd510;
+    margin-top: 40px;
+}
+
+.Desenvolvimento{
+
+    color:#f2910a
+}
+
+p{
+
+    padding: 15px;
+}
+
+#Contato h3{
+
+    font-size: 20px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+h3{
+    color: #2c2d34;
+    text-align: center;
+}
+
+#Contato ul li{
+
+    margin-top: 5px;
+}
+
+#Contato ul li a:hover{
+
+   color: azure;
+}
+
+
+
+footer{
+
+    background-color: #f2910a;
+    height: 7vh;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+h4{
+
+    color: #2c2d34;
+}
+
+
+
+
+
+
+
