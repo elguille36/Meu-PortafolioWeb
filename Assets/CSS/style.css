@@ -12,40 +12,72 @@ body{
 
     font-family: "Roboto", sans-serif;
     line-height: 1.6;
-    background-image: url(../img/js.jpg);
+    background-image: url(../img/programacion.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    width: 100%;
+    height: auto;
 }
 /*Cabezado*/
 header{
 
-    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     height: 20vh;
     background-color: #2c2d34;
     box-shadow: 0px 1px 1px 0px #f2910a;
 }
 
-nav{
-    z-index: 1;
-    position: fixed;
+.logo{
+
+    width: 40%;
+    border-radius: 50%;
+    margin-left: 1rem;
+    cursor: pointer;
+    box-shadow: 0 2px 1px 0 #efd510;
 }
+
+.logo:hover{
+
+    margin-left: 0.7rem;
+}
+
+nav ul li{
+
+    display: inline;
+}
+
 /*bloco pessoal se fiz posicionamento*/
 #Sobre-Mi{
 
     display: flex;
-    flex-direction: row;
-   /* background-color: #e94822;*/
+    justify-content: center;
     width: 100%;
+}
+
+.about{
+
+    display: flex;
+    width: 60%;
+    margin-top: 2rem;
+}
+
+.nome{
+
+    font-size: 2rem;
+    text-align: left;
+    margin-left: 0.5rem;
 }
 
 /*largura, borda , sombreado e margin da imagen pessoal*/
 #Sobre-Mi img{
 
     width: 40%;
+    height: 40%;
     border-radius: 40%;
     box-shadow: 0 2px 3px 0 #efd510;
-    margin-left: 1%;
 }
 
 /*posicionamento dos conteudo do bloco desenvolvimento*/
@@ -56,6 +88,62 @@ nav{
 /* background-color: #e94822;*/
     margin: 10px 0 0 0;
 }
+
+#Contato{
+
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+}
+
+.contacto-group{
+
+    width: 100%;
+    margin-top: 20px;
+    padding: 0 20%;
+ }
+
+ .formulario{
+   width: 50%;
+   float: right;
+   background-color: #2c2d34;
+   border-radius: 5%;
+   box-shadow: 0 1px 1px 0 #efd510;
+ }
+
+ .form-contacto{
+     width: 80%;
+     padding: 0.5rem;
+     margin: 0.6rem 0.5rem;
+     display: block;
+     outline: 0;
+     font-size: 16px;
+
+     border-radius: 5px;
+     border:1.5px solid #c7c7c7;
+ }
+
+ .btn-enviar{
+
+    display: block;
+    font-size: 1rem;
+    text-transform: uppercase;
+    background-color: #e94822;
+    color: #ffff;
+    border: none;
+    border-radius: 5px;
+    padding: 0.5rem 1.5rem;
+    margin: 0.5rem 0.6rem;
+    cursor: pointer;
+    transition: all 0.5s ease;
+ }
+
+.btn-enviar:hover{
+
+    background-color: #b82c0c;
+}
+
+
 /*largura da foto programação e borda redonda*/
 .img-programar{
 
@@ -67,13 +155,7 @@ nav{
 
     width: 60%;
 }
-/*pocicionamento das lista de navegação*/
-nav ul li {
 
-    /*display: inline;*/
-    float: left;
-    list-style: none;
-}
 /*cor dos link de navegação*/
 .enlace-nav{
 
@@ -116,6 +198,7 @@ inside{
     padding: 0 5px 0 5px;
     width: 25%;
     border: solid 2px #efd510;
+    justify-content: space-around;
 }
 /*propiedades alinção , centralizado e tirar o stile da lista*/
 inside ul li{
@@ -126,9 +209,15 @@ inside ul li{
 
 }
 
-inside ul{
 
-    margin-top: 25px;
+.certificado{
+
+    cursor: pointer;
+}
+
+.certificado:hover{
+
+    width: 80% ;
 }
 /*margin no bloco de contato*/
 #Contato{
@@ -139,6 +228,7 @@ inside ul{
 h1{
 
     color: azure;
+    font-size: 2rem;
 }
 
 /*cor e margin no title principal da tag spam*/
@@ -146,12 +236,14 @@ h1{
 
     color:#efd510;
     margin: 10px;
+    font-size: 1rem;
 }
 /*cor , tamanho e alinção no sub-titulo dos conteudos*/
+
 h2{
 font-size: 30px;
-text-align: center;
 color: #efd510;
+text-align: center;
 
 }
 
@@ -164,7 +256,8 @@ color: #efd510;
 /*margin na propiedades Sobre-mi*/
 .Sobre-Mi{
 
-    margin-top: 40px;
+margin-top: 40px;
+
 }
 
 /*paragrafo do conteudo*/
@@ -172,14 +265,13 @@ p{
 
     padding: 15px;
     font-size: 15px;
-    background-color: #e94822;
     border-radius: 10px;
     margin-left: 5px;
     color:#efd510;
-    box-shadow: 0 1px 1px 0 #f2910a;
+    background-color: #2c2d34;
 }
 
-#Contato h3{
+.redes-sociais h3{
 
     margin-top: 10px;
 }
@@ -190,12 +282,12 @@ h3{
     font-size: 20px;
 }
 /*margin nas lista dos contato*/
-#Contato ul li{
+.redes-sociais ul li{
 
     margin-top: 5px;
 }
 /*cor no link do contato*/
-#Contato ul li a{
+.redes-sociais ul li a{
 
     color: #e94822;
 }
@@ -210,7 +302,7 @@ figcaption{
     color:#efd510;
 }
 
-#Contato ul li a:hover{
+.redes-sociais ul li a:hover{
 
 color: azure;
 }

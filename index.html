@@ -13,7 +13,11 @@
 <body>
 
 <header>
-    <h1><span class="title" id="Home">Desenvolvedor</span>Front-End</h1>
+<span>
+    <a href="#Home">
+        <img class="logo" src="./Assets/img/foto personal miniatura.jpg" alt="foto logo">
+    </a>
+</span>
 <nav>
 <ul>
 
@@ -29,24 +33,27 @@
 <main>
     <section>
 
-        <h2 class="sub-title">Sejam Bem-vindo á minha Jornada de Trabalho</h2>
+        <h1>Sejam Bem-vindo á minha Jornada de Trabalho</h1>
 
     </section>
 
     <section id="Sobre-Mi">
-
-        <img src="Assets/img/370288102_704123334501647_2900081562569407184_n.jpg" alt="minha foto">
+<div class="about">
+        <img src="./Assets/img/download (1).jpg" alt="minha foto">
 
         <article class="Sobre-Mi">
 
-            <h2>Sobre-Mi</h2>
+            <h2 class="nome">Guillermo Perez</h2>
+            <h6 class="title"><span class="sub-title">Developer</span> full-stack</h6>
 
-            <p>Tenho experiência com tecnologias como HTML, CSS, JavaScript, React e outras ferramentas do ecossistema front-end.
-                Ao longo da minha trajetória, participei de projetos variados, desde landing pages até aplicações web complexas, sempre focando na melhor experiência do usuário.<br>
+            <p>
+                Olá pessoal tudo bem, Ao longo da minha trajetória, participei de projetos variados, desde landing pages até aplicações web complexas, sempre focando na melhor experiência do usuário.<br>
                 Na vida pessoal, sou curioso e estou sempre em busca de aprender algo novo — seja uma nova linguagem de programação, um framework ou até mesmo hobbies como design, música ou fotografia. Gosto de trabalhar em equipe, trocar ideias e contribuir com soluções criativas para desafios técnicos e visuais.
             </p>
 
         </article>
+
+</div>
 
     </section>
     <section id="Desenvolvimento">
@@ -65,31 +72,54 @@
         </article>
 
     </section>
+    <section id="Contato">
 
+        <h2>Contato</h2>
+
+        <div class="contacto-group">
+            <form class="formulario" action="https://formspree.io/f/mvojajzd" method="POST">
+                <div>
+                    <input type="text" name="Nombre" placeholder="Nome Completo" class="form-contacto"
+                        required>
+                    <input type="text" name="Apellido" placeholder="SobreNome" class="form-contacto"
+                        required>
+                    <input type="email" name="email" placeholder="Email" class="form-contacto"
+                        required>
+                    <input type="tel" name="phone" placeholder="Celular" class="form-contacto">
+                </div>
+                <textarea name="coments" placeholder="mensaje" rows="4" class="form-contacto"></textarea>
+                <input type="submit" value="enviar" class="btn-enviar">
+            </form>
+        </div>
+    </section>
 </main>
 <inside>
 
     <h3>Minha Experiencia na Area Web</h3>
 
+    <div>
+
     <ul>
         <li>
             <figure>
-            <img src="./Assets/img/certi2.png" width="200" alt="">
+            <a><img class="certificado" src="./Assets/img/certi2.png" width="200" alt="certificado front-end"></a>
             <figcaption>Formação Front-End</figcaption>
             </figure>
         </li>
         <li>
-            <img src="./Assets/img/certi1.png" width="200" alt="">
+            <a><img class="certificado"  src="./Assets/img/certi1.png" width="200" alt="certificado CSS"></a>
             <figcaption>Formação CSS3 Resposive</figcaption>
         </li>
         <li>
-            <img src="./Assets/img/certi.png" width="200" alt="">
+            <a><img class="certificado"  src="./Assets/img/certi.png" width="200" alt="certificado Mysql"></a>
             <figcaption>Formação em MySQl</figcaption>
         </li>
     </ul>
 
-    <div id="Contato">
-        <h3>Contata-me aqui :</h3>
+</div>
+
+    <div class="redes-sociais">
+        <h3>Minha Redes Sociais :</h3>
     <ul>
         <li><a href="#" target="_blank"><i class="bi bi-facebook" id="icone"></i> Facebook</a></li>
         <li><a href="#" target="_blank"><i class="bi bi-instagram" id="icone"></i> Instagram</a></li>
