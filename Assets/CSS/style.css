@@ -12,7 +12,8 @@ body{
 
     font-family: "Roboto", sans-serif;
     line-height: 1.6;
-    background-image: url(../img/programacion.jpg);
+    /*background-image: url(../img/programacion.jpg);*/
+    background-image: url(https://wallpapers.com/images/hd/2440x1440-programming-background-2440-x-1440-qucb7t04z3jcmgwi.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -25,29 +26,50 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 20vh;
+    height: 15vh;
     background-color: #2c2d34;
     box-shadow: 0px 1px 1px 0px #f2910a;
-}
+    background-image: url(https://i.gifer.com/Rr20.gif);
+    background-repeat: no-repeat;
+    background-position:left;
+    width: 100%;
 
+}
 .logo{
 
-    width: 40%;
+    width:30%;
     border-radius: 50%;
     margin-left: 1rem;
     cursor: pointer;
     box-shadow: 0 2px 1px 0 #efd510;
+    animation: rotate 7s linear infinite;
 }
 
-.logo:hover{
+@keyframes rotate{
 
-    margin-left: 0.7rem;
+    from{
+        
+    transform: rotateY(360deg);
+    }
+
+    to{
+
+        transform: rotateY(0deg);
+    }
 }
 
 nav ul li{
 
-    display: inline;
+    display: inline;;
 }
+
+/* nav{
+
+    position: fixed; 
+    z-index: 1;
+    width: 100%;
+    left: 60%; 
+} */
 
 /*bloco pessoal se fiz posicionamento*/
 #Sobre-Mi{
@@ -69,6 +91,7 @@ nav ul li{
     font-size: 2rem;
     text-align: left;
     margin-left: 0.5rem;
+    color:#efd510;
 }
 
 /*largura, borda , sombreado e margin da imagen pessoal*/
@@ -89,6 +112,52 @@ nav ul li{
     margin: 10px 0 0 0;
 }
 
+#Projetos{
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.box-projetos{
+
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 1em;
+}
+
+.app{
+
+    color: #e94822;
+}
+
+.app:hover{
+
+    color: azure;
+
+}
+
+.img-github{
+
+    background-color: azure;
+    border-radius: 10%;
+  
+}
+
+.box-img{
+
+    display: flex;
+    justify-content: center
+}
+
+.img-projeto{
+
+    border-radius: 50%;
+    width: 20%;
+    box-shadow: 0 1px 1px 0 #efd510;
+}
+
 #Contato{
 
     display: flex;
@@ -103,27 +172,26 @@ nav ul li{
     padding: 0 20%;
  }
 
- .formulario{
+.formulario{
    width: 50%;
    float: right;
    background-color: #2c2d34;
    border-radius: 5%;
    box-shadow: 0 1px 1px 0 #efd510;
- }
+}
 
- .form-contacto{
-     width: 80%;
-     padding: 0.5rem;
-     margin: 0.6rem 0.5rem;
-     display: block;
-     outline: 0;
-     font-size: 16px;
+.form-contacto{
+    width: 80%;
+    padding: 0.5rem;
+    margin: 0.6rem 0.5rem;
+    display: block;
+    outline: 0;
+    font-size: 16px;
+    border-radius: 5px;
+    border:1.5px solid #c7c7c7;
+}
 
-     border-radius: 5px;
-     border:1.5px solid #c7c7c7;
- }
-
- .btn-enviar{
+.btn-enviar{
 
     display: block;
     font-size: 1rem;
@@ -159,7 +227,7 @@ nav ul li{
 /*cor dos link de navegação*/
 .enlace-nav{
 
-    color: #efd510;
+    color: azure;
     margin:25px 15px 10px 10px ;
 }
 
@@ -193,12 +261,13 @@ inside{
 
     display: flex;
     flex-direction: column;
-    /*background-color: #efd510;*/
+    /*background-color: #2c2d34;*/
     margin-top: 10px;
     padding: 0 5px 0 5px;
     width: 25%;
-    border: solid 2px #efd510;
-    justify-content: space-around;
+    border: solid 1px #e94822;
+    justify-content:space-around;
+
 }
 /*propiedades alinção , centralizado e tirar o stile da lista*/
 inside ul li{
@@ -206,6 +275,21 @@ inside ul li{
     list-style: none;
     text-align: center;
     align-items: center;
+
+}
+
+.inside-certificado {
+
+    height:100vh;
+    display: flex; 
+    justify-content: center;
+}
+
+.inside-certificado ul{
+
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
 
 }
 
@@ -225,7 +309,7 @@ inside ul li{
     margin:5px 15px 0px 15px;
 }
 /* cor no resto do title principal*/
-h1{
+.title-principal{
 
     color: azure;
     font-size: 2rem;
@@ -240,7 +324,7 @@ h1{
 }
 /*cor , tamanho e alinção no sub-titulo dos conteudos*/
 
-h2{
+.title-conteudo{
 font-size: 30px;
 color: #efd510;
 text-align: center;
@@ -253,30 +337,21 @@ text-align: center;
     color:azure;
 }
 
-/*margin na propiedades Sobre-mi*/
-.Sobre-Mi{
-
-margin-top: 40px;
-
-}
 
 /*paragrafo do conteudo*/
 p{
 
     padding: 15px;
-    font-size: 15px;
+    font-size: 1rem;
     border-radius: 10px;
     margin-left: 5px;
     color:#efd510;
     background-color: #2c2d34;
+    box-shadow: 0.5px 1px  1px #efd510;
 }
 
-.redes-sociais h3{
-
-    margin-top: 10px;
-}
 /*cor e centralizado nos sub-title h3*/
-h3{
+.title-redesSociais{
     color: #efd510;
     text-align: center;
     font-size: 20px;
@@ -312,17 +387,425 @@ color: azure;
 footer{
 
     background-color: #2c2d34;
-    height: 7vh;
-    display: flex;
     width: 100%;
+    text-align: center;
+    /* height: 7vh;
+    display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
 }
 /*cor a titulo de pé de pagina*/
-h4{
+.title-footer{
 
     color: #efd510;
 }
+
+.menu-desplegable{
+
+    display: none;
+}
+
+
+/*Media queries*/
+
+@media(max-width:760px){
+
+body{
+
+        background-image: none;
+}
+
+header{
+
+    background-image: none;
+}
+
+.icone{
+
+    position: fixed;
+    left: 90%;
+}
+
+#navBar{
+
+    display: none;
+}
+
+#menu-open{
+
+    color: #efd510;
+}
+
+#menu-exit{
+
+    display: none;
+}
+
+.menu-desplegable{
+
+    display: block;
+    font-size: 2rem;
+    color: azure;
+    margin-right: 1rem;
+}
+
+body.menu-active #navBar{
+
+    display: flex;
+    height: 16vh;
+    /* background-color: #6a6c78;
+    border-radius: 5%; */
+    margin: 1rem 0 0 0;
+    width: 34%;
+}
+
+body.menu-active .menu{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1rem;
+}
+
+body.menu-active .enlace-nav{
+
+    color: #efd510;
+    padding: 0.2rem;
+    font-weight:900;
+}
+
+body.menu-active .enlace-nav:hover{
+
+    color: #2c2d34;
+}
+
+
+body.menu-active #menu-exit{
+
+    display: block;
+    animation: trocarColor 1s infinite;
+
+}
+
+@keyframes trocarColor {
+
+    0% { color:#c7c7c7;}
+    50% { color:#efd510;}
+    100% { color:#c7c7c7;}
+    
+}
+
+
+body.menu-active #menu-open{
+
+ display: none;
+}
+
+.title-principal{
+
+    font-size: 1.60rem;
+    color:#2c2d34
+}
+
+.nome{
+
+    font-size: 1.75rem;
+}
+
+
+#Sobre-Mi{
+
+display: flex;
+flex-flow: column;
+background-image: url(../img/programacion.jpg);
+background-position: center;
+
+}
+
+#Sobre-Mi img{
+
+    width: 30%;
+}
+
+.about{
+
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    margin-top: 2rem;
+    padding: 1rem 3rem 1rem 3rem;
+    width: 100%;
+}
+
+#Desenvolvimento{
+
+
+    flex-direction: column;
+    align-items: center;
+}
+
+.title-conteudo{
+
+    color: #2c2d34;
+}
+
+.img-programar{
+
+    width: 62%;
+}
+
+.Desenvolvimento{
+
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+}
+
+#Projetos{
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #a1a2a7;
+    padding: 1rem 0;
+    border-radius: 10%;
+}
+
+#Projetos .title-conteudo{
+
+    color: #efd510;
+}
+
+.box-projetos{
+
+    flex-direction: column;
+}
+
+.box-img{
+
+
+    flex-direction: column;
+    align-items: center;
+}
+
+.box-img p{
+
+    width: 50%;
+}
+
+main{
+
+    width: 100%;
+}
+
+inside{
+
+    display: none;
+}
+
+
+.contacto-group{
+
+    padding: 0;
+}
+
+.app{
+
+    animation: trocarColor 1.5s infinite;
+}
+
+@keyframes trocarColor {
+
+    0% { color:#e94822;}
+    50% { color:#c7c7c7;}
+    100% { color:#b82c0c;}
+    
+}
+
+
+
+}
+
+@media(min-width:761px) and (max-width:1200px){
+
+body{
+
+        background-image: none;
+}
+main{
+
+    width: 100%;
+}
+
+.icone{
+
+    position: fixed;
+    left: 90%;
+}
+
+inside{
+
+    display: none;
+}
+
+#navBar{
+
+    display: none;
+}
+
+#menu-exit{
+
+    display: none;
+}
+
+.menu-desplegable{
+
+    display: block;
+    font-size: 2.5rem;
+    color: azure;
+    margin-right: 2rem;
+    color: #efd510;
+}
+
+body.menu-active #navBar{
+
+    display: flex;
+    height: 16vh;
+    /* background-color: #6a6c78;
+    border-radius: 5%; */
+    margin: 1rem 0 0 0;
+    width: auto;
+}
+
+body.menu-active .menu{
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 1.5rem;
+    width: auto;
+}
+
+body.menu-active .enlace-nav{
+
+    color: #efd510;
+    padding: 0.2rem;
+    font-weight:900;
+}
+
+body.menu-active .enlace-nav:hover{
+
+    color: #2c2d34;
+}
+
+body.menu-active #menu-exit{
+
+    display: block;
+    margin-bottom: 4rem;
+    animation: trocarColor 1s infinite;
+
+}
+
+@keyframes trocarColor {
+
+    0% { color:#c7c7c7;}
+    50% { color:#efd510;}
+    100% { color:#c7c7c7;}
+    
+}
+
+
+body.menu-active #menu-open{
+
+ display: none;
+}
+
+
+#Sobre-Mi{
+
+    flex-direction: column;
+    align-items: center;
+    background-image: url(../img/programacion.jpg);
+}
+
+.about{
+
+    flex-direction: column;
+    padding: 1rem 2rem 1rem 2rem;
+}
+
+#Desenvolvimento{
+
+    flex-direction: column;
+    align-items: center;
+}
+
+.Desenvolvimento .title-conteudo{
+
+    color: #2c2d34;
+}
+
+.img-programar{
+
+    width: 40%;
+}
+
+#Projetos{
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #a1a2a7;
+    padding: 1rem 0;
+    border-radius: 10%;
+}
+
+.box-projetos{
+
+    flex-direction: column;
+}
+
+.box-img{
+
+
+    flex-direction: column;
+    align-items: center;
+}
+
+.box-img p{
+
+    width: 50%;
+}
+
+#Contato .title-conteudo{
+
+    color:#2c2d34
+}
+
+.contacto-group{
+
+    padding: 0 10%;
+}
+
+.app{
+
+    animation: trocarColor 1.5s infinite;
+}
+
+@keyframes trocarColor {
+
+    0% { color:#e94822;}
+    50% { color:#c7c7c7;}
+    100% { color:#b82c0c;}
+    
+}
+
+}
+
+
+
+
 
 
 
