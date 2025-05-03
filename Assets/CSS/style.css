@@ -304,10 +304,7 @@ inside ul li{
     width: 80% ;
 }
 /*margin no bloco de contato*/
-#Contato{
 
-    margin:5px 15px 0px 15px;
-}
 /* cor no resto do title principal*/
 .title-principal{
 
@@ -604,10 +601,17 @@ inside{
     display: none;
 }
 
-
 .contacto-group{
 
     padding: 0;
+    justify-content: center;
+    display: flex
+;
+}
+
+.formulario{
+
+    width: 60%;
 }
 
 .app{
