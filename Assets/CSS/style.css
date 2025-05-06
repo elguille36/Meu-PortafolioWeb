@@ -213,7 +213,7 @@ nav ul li{
 
 
 /*largura da foto programação e borda redonda*/
-.img-programar{
+.img-programarl{
 
     width: 30%;
     border-radius: 15px;
@@ -407,6 +407,12 @@ footer{
     display: none;
 }
 
+.content-img-programar{
+
+    display: none;
+}
+
+
 
 /*Media queries*/
 
@@ -551,9 +557,27 @@ background-position: center;
     color: #2c2d34;
 }
 
+.content-img-programar{
+
+    height: 25vh;
+    margin-top: 2rem;
+    display: block;
+}
+
+.img-programarl{display: none;}
+
+
 .img-programar{
 
     width: 62%;
+    animation: movimento linear 3s infinite;
+    left: 10%;
+    position: absolute;
+}
+
+@keyframes movimento {
+    0%{left: 25%;}
+    50%{right: 25%;}
 }
 
 .Desenvolvimento{
@@ -667,7 +691,7 @@ footer{
 .img-redes{
 
     /* width: 7%; */
-    border-radius: 20px;
+    border-radius: 25px;
     animation: CambioDeTamanho 3s infinite;
 }
 @keyframes CambioDeTamanho {
@@ -822,7 +846,7 @@ body.menu-active #menu-open{
     color: #2c2d34;
 }
 
-.img-programar{
+.img-programarl{
 
     width: 40%;
 }
@@ -912,14 +936,14 @@ footer{
 .img-redes{
 
     /* width: 7%; */
-    border-radius: 20px;
+    border-radius: 35px;
     animation: CambioDeTamanho 3s infinite;
 }
 @keyframes CambioDeTamanho {
-    0%{width: 7%;}
-    25%{width: 8%;}
-    50%{width: 7%;}
-    100%{width: 8%;}
+    0%{width: 6%;}
+    25%{width: 7%;}
+    50%{width: 6%;}
+    100%{width: 7%;}
     
 }
 
@@ -945,6 +969,12 @@ footer{
       left: 40%;
     }
   }
+
+.content-img-programar{
+
+    display: none;
+}
+
 
 
 }
